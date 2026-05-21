@@ -1,0 +1,10 @@
+services:
+  cypress:
+    build: .
+    environment:
+      - CYPRESS_BASE_URL=http://host.docker.internal:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./cypress/screenshots:/e2e/cypress/screenshots
+      - ./cypress/videos:/e2e/cypress/videos
