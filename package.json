@@ -1,0 +1,12 @@
+{
+  "name": "crocos-qa-automation",
+  "version": "1.0.0",
+  "description": "QA automation with Cypress",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
